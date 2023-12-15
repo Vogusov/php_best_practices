@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  php-cli:
+    build: ./
+    restart: unless-stopped
+    ports:
+      - '8111:80'
+    volumes:
+      - './:/usr/src/app'
